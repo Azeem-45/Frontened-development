@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        body{
+            background-color: rgb(17, 178, 252);
+        }
+        [attribute="Main"]{
+            border:2px solid black;
+            border-radius:10px;
+            background-color: aliceblue;
+            padding:10px ;
+            padding-left:500px;
+            box-shadow:4px 4px 3px black;}
+       [class="burger"]{ border-radius:20px; width:1250px;}
+       #button{
+        position: absolute;
+        top:500px;left:100px;
+        border-radius:10px;
+        font-size:20px;
+        padding:10px 20px;
+        box-shadow:4px 4px 4px white;
+       }
+       img:hover{
+        border:8px solid white;
+       }
+       #button:active{
+        background-color:darkviolet;
+       }
+       #button:hover,[attribute="Main"]:hover{
+        background-color:rgb(244, 244, 55);color:brown;
+        font-style: italic;font-weight: bold;
+       }
+       form{
+        font-size:20px;
+       position: relative;
+        left:400px;display:inline-block;
+       }
+       .otp{
+        display:inline-flex;
+       }
+     .otp input{
+        width: 20px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 2px;
+  border: 2px solid #2219ca;background-color: black;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.1s;
+       }
+       input:focus{
+        background-color: #2219ca;
+       }
+    </style>
+</head>
+<body>
+    <h1 attribute="Main">Ordering Website</h1>
+    <div>
+        <img src="https://www.shutterstock.com/image-photo/burger-tomateoes-lettuce-pickles-on-600nw-2309539129.jpg" alt="burger" class="burger">
+        <button id="button">Order Now</button>
+    </div>
+    <div>
+    <form>
+        <fieldset style="border:5px solid black; border-radius:20px;">
+       <legend>Sign In</legend>
+       <p>Name:<input type="text" placeholder="----Enter your Name---"></p>
+       <p>Phone No.:<input type="tel" name="Phone" inputmode="tel" maxlength="10" placeholder="Number 10 digits"></p>
+       <p>Age:<input type="text" name="age"></p>
+       <p>Verify your Number:</p>
+       <div class="otp">
+       <input  type="text" inputmode="numeric"maxlength="1">
+       <input  type="text" inputmode="numeric"maxlength="1">
+       <input  type="text" inputmode="numeric"maxlength="1">
+       <input type="text" inputmode="numeric"maxlength="1">
+       </div>
+       <br>
+       <input type="submit" style="border-radius:10px;font-size:20px;">
+       </fieldset>
+    </form>
+    </div>
+</body>
+</html>
