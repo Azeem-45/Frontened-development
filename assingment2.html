@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS//Admission Form @Fill</title>
+    <style>
+        body{
+            background-color: rgb(88, 196, 245);}
+            h1{
+                border:2px solid white;border-radius:10px;
+                display: inline-flex;background-color:white;
+                position: relative;left:500px;}
+                .form{
+                    border:2px solid white;
+                    border-radius:20px; padding:20px;
+                    display: inline-flex;position: relative;
+                    left:120px;top:130px;
+                    background-color:white;
+                    font-size:20px;
+                padding-right:60px; padding-left:50px;
+            box-shadow:4px 4px 3px 2px black,4px 4px 3px black;}
+                    legend{
+                        font-size:30px;
+                        font-weight: bold;
+                    }
+                    textarea{
+                    height:100px; width:200px;
+                    padding-left:80px;
+                    }
+                button{
+                    padding:20px;
+                    font-size:15px;
+                    font-weight: bolder;
+                    border-radius:20px;
+                    position: relative; top:20px;left:200px;
+                }
+    </style>
+</head>
+<body>
+    <h1>Admission Form</h1>
+    <div class="form">
+        <form>
+            <fieldset>
+           <legend>Personal Information</legend>
+           <p>Name:<input type="text" name="name"></p>
+           <p>FatherName:<input type="tel" name="Father Name"></p>
+           <p>DD/MM/YYYY:<input type="date"name="DD/MM/YYYY"></p>
+           <p>Age:<input type="number" name="age"></p>
+           <P>Percentage:<input type="number" name="Percentage"></P>
+           <p>School Name:<input type="text"></p>
+           <p>Phone No.:<input type="tel"name="Phone No."></p>
+           <p>Gender: <input type="checkbox"name="Gender">Female<input type="checkbox" value="Male">Male</p>
+           <form>
+            <label>Department:</label>
+            <select>
+                <option value="select">---Select your dept-----</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="ECE"> ECE</option>
+            <option value="AIDS"> AIDS</option>
+            <option value="MECH"> MECH</option>
+            </select>
+        <p>Activites:<input type="radio" value="Data science">Data science
+            <input type="radio" value="AIML" > AIML
+            <input type="radio" value="Web development"> Web development</p>
+            <p> Write about your achivements:<br><textarea></textarea></p>
+            </fieldset>
+            <fieldset>
+            <legend style="padding-top:20px;">Office Use</legend>
+            <p>Date:<input type="datetime" name="Date"></p>
+            <p>Email:<input type="email"name="Email"></p> 
+            <p>Upload Image: <input type="file" name="Image"></p>
+            <p>Father No.<input type="tel" name="number"></p>
+            </fieldset>
+            <button>Submit</button>
+            </form>
+        </form>
+    </div>
+</body>
+</html>
